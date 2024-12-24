@@ -1,0 +1,240 @@
+/* ------ CSS Reset ------ */
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* prettier-ignore */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* prettier-ignore */
+body {
+	line-height: 1;
+  box-sizing: border-box;
+}
+
+/* prettier-ignore */
+ol, ul {
+	list-style: none;
+}
+
+/* prettier-ignore */
+blockquote, q {
+	quotes: none;
+}
+
+/* prettier-ignore */
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------ Main Screen ------ */
+
+body {
+  font-family: "VT323";
+  background-image: url(../assets/12.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-family: "Luckiest Guy";
+  font-size: 68px;
+  text-align: center;
+  letter-spacing: 5pt;
+  -webkit-text-stroke: 1.5px #843c0c;
+  -webkit-text-fill-color: #eb5b00;
+  width: 19cm;
+  background-color: #ffd966;
+  padding: 12px;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.6);
+  animation: scale-up-center 900ms linear infinite alternate both;
+}
+
+.content .play-button {
+  background-color: #f26b0f;
+  border: none;
+  border-radius: 50%;
+  margin-top: 65px;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  transition: 300ms;
+}
+
+.content .play-button:hover {
+  transform: scale(1.15);
+  transition: 300ms;
+}
+
+.content .play-button .play-icon {
+  width: 0px;
+  height: 0px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 45px solid #fcc737;
+  transform: rotate(-90deg);
+  position: relative;
+  left: 29px;
+}
+
+.content p {
+  font-size: 65px;
+  -webkit-text-stroke: 1.5px #7f6000;
+  -webkit-text-fill-color: #ebde67;
+  letter-spacing: 3px;
+  margin-top: 35px;
+  animation: scale-up-center-text 900ms linear infinite alternate both;
+}
+
+.animation-asset {
+  position: absolute;
+}
+
+.boy-main {
+  left: 110px;
+  top: 315px;
+  width: 90px;
+  animation: translate-boy-girl 0.45s linear infinite alternate both;
+}
+
+.girl-main {
+  right: 0px;
+  bottom: 25px;
+  width: 180px;
+  animation: translate-boy-girl 0.45s linear 0.1s infinite alternate both;
+}
+
+.parrot {
+  width: 100px;
+  left: 10px;
+  top: 83px;
+}
+
+.monyet2 {
+  width: 500px;
+  right: -37px;
+  top: -20px;
+  z-index: -1;
+  animation: translate-monyet 1s linear infinite alternate both;
+}
+
+.daun1 {
+  width: 290px;
+  right: -60px;
+  bottom: -40px;
+  animation: rotate-daun 0.5s linear infinite alternate;
+}
+
+.daun3 {
+  width: 300px;
+  left: -95px;
+  bottom: -30px;
+  animation: rotate-daun 0.9s linear 0.1s infinite alternate-reverse;
+}
+
+.daun5 {
+  width: 400px;
+  left: 10px;
+  bottom: -30px;
+  animation: scale-up-daun 0.8s linear infinite alternate both;
+}
+
+/* ------ Animation ------ */
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes scale-up-daun {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes scale-up-center-text {
+  0% {
+    transform: scale(1);
+    -webkit-text-fill-color: #ebde67;
+  }
+  100% {
+    transform: scale(1.09);
+    -webkit-text-fill-color: whitesmoke;
+  }
+}
+
+@keyframes translate-boy-girl {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-13px);
+  }
+}
+
+@keyframes translate-monyet {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate-daun {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}

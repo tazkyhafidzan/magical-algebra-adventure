@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "VT323";
+  background-image: url(../assets/9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.petunjuk .girlBiasa {
+  position: absolute;
+  left: -100px;
+  top: 20px;
+  width: 430px;
+  opacity: 0;
+}
+
+.petunjuk .speech-rectangle {
+  position: absolute;
+  left: 150px;
+  top: 60px;
+  background: #e2f0d9;
+  color: #385723;
+  padding: 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+  width: 300px;
+  z-index: -1;
+  outline: #385723 2px solid;
+  opacity: 0;
+}
+
+.petunjuk .animate-speech,
+.petunjuk .animate-girlBiasa {
+  animation: scale-in-center 1s ease both;
+}
+
+.drop-target {
+  position: absolute;
+  left: 30%;
+  bottom: 20px;
+  width: 531px;
+  height: 378px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: black 1px dashed;
+}
+
+.trapesium {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  width: 340px;
+  height: 76px;
+  cursor: grab;
+}
+
+.segitigaSiku {
+  position: absolute;
+  left: 50px;
+  bottom: 200px;
+  cursor: grab;
+}
+
+.segitigaKecil {
+  position: absolute;
+  right: 500px;
+  top: 150px;
+  width: 19px;
+  height: 38px;
+  cursor: grab;
+}
+
+.next {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  height: 50px;
+  background: #385723;
+  color: #e2f0d9;
+  font-family: "VT323";
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.animate-next {
+  animation: scale-in-center 0.3s ease both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

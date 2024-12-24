@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontface.css" />
+    <link rel="stylesheet" href="css/hewan.css" />
+    <title>Magical Algebra Adventure</title>
+  </head>
+  <body>
+    <!-------- Main Content -------->
+
+    <div class="petunjuk">
+      <img src="assets/3.png" alt="Perempuan" class="girlBiasa" />
+      <div class="speech-rectangle">
+        Kelompokkan hewan-hewan ke tempat yang sesuai
+      </div>
+    </div>
+
+    <!-------- Assets -------->
+
+    <div class="drop-target drop1"></div>
+    <div class="drop-target drop2"></div>
+    <div class="drop-target drop3"></div>
+    <div class="drop-target drop4"></div>
+    <div class="drop-target drop5"></div>
+
+    <img src="assets/jerapah.png" alt="Jerapah" id="jerapah" />
+    <img src="assets/gorilla.png" alt="Gorilla" id="gorilla" />
+    <img src="assets/zebra.png" alt="Zebra" id="zebra" />
+    <img src="assets/buaya.png" alt="Buaya" id="buaya" />
+    <img src="assets/flamingo.png" alt="Flamingo" id="flamingo" />
+
+    <button onclick="clickButton()" class="next">Lanjut</button>
+
+    <!-------- Audio -------->
+
+    <audio id="bgMusic">
+      <source
+        src="audio/Let's cook 2 - Cooking Mama Soundtrack.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <script src="javascript/hewan.js"></script>
+    <script src="javascript/dragHewan.js"></script>
+    <script>
+      function clickButton() {
+        let btnSound = new Audio("audio/506053__mellau__button-click-2.wav");
+        btnSound.play();
+
+        setTimeout(function () {
+          window.location.href = "map3.html";
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

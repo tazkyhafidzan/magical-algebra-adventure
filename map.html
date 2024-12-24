@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontface.css" />
+    <link rel="stylesheet" href="css/styleMap.css" />
+    <title>Magical Algebra Adventure</title>
+  </head>
+  <body>
+    <!-------- Main Content -------->
+
+    <div class="speech-bubble">
+      <h3>Level 1</h3>
+      <p>Menyusun Puzzle</p>
+      <button onclick="clickButton()" class="mulai">Mulai</button>
+    </div>
+
+    <div class="boy-girl">
+      <img src="assets/7.png" alt="Boy Ransel" class="boy" />
+      <img src="assets/6.png" alt="Girl Ransel" class="girl" />
+    </div>
+
+    <!-------- Audio -------->
+
+    <!-- <audio id="bgMusic" autoplay loop>
+      <source src="audio/Menu - Cooking Mama Soundtrack.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio> -->
+
+    <!------- JavaScript ------->
+
+    <script>
+      document.addEventListener("keydown", function (event) {
+        if (event.code === "Space") {
+          let bgMusic = new Audio("audio/Menu - Cooking Mama Soundtrack.mp3");
+          bgMusic.play();
+
+          var boyGirl = document.querySelector(".boy-girl");
+          boyGirl.classList.add("animate-boy-girl");
+        }
+      });
+
+      function clickButton() {
+        let btnSound = new Audio("audio/506053__mellau__button-click-2.wav");
+        btnSound.play();
+
+        setTimeout(function () {
+          window.location.href = "puzzle.html";
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

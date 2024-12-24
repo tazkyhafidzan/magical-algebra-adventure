@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontface.css" />
+    <link rel="stylesheet" href="css/kuis.css" />
+    <title>Magical Algebra Adventure</title>
+  </head>
+  <body>
+    <!-------- Main Content -------->
+
+    <div class="soal">1 + 3 - 2 = ...</div>
+    <div class="btn">
+      <div class="btn-a-b">
+        <button class="jawabanA jawaban">A. 1</button>
+        <button class="jawabanC jawaban">C. 3</button>
+      </div>
+      <div class="btn-c-d">
+        <button class="jawabanB jawabanBenar">B. 2</button>
+        <button class="jawabanD jawaban">D. 4</button>
+      </div>
+    </div>
+
+    <img src="assets/monyet1.png" alt="Monyet" class="monyet" />
+    <img src="assets/Tanpa judul (Presentasi) (3).gif" alt="Owl" class="owl" />
+
+    <button onclick="clickButton()" class="next">Lanjut</button>
+
+    <img src="assets/benar.gif" alt="Benar" class="benar" />
+    <img src="assets/salah.gif" alt="Salah" class="salah" />
+
+    <!-------- Audio -------->
+
+    <audio id="btnWrong">
+      <source
+        src="audio/351565__bertrof__game-sound-incorrect-organic-violin.wav"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <audio id="btnCorrect">
+      <source
+        src="audio/131662__bertrof__game-sound-correct_v2.wav"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <audio id="bgMusic" autoplay loop>
+      <source
+        src="audio/Let's cook 5 - Cooking Mama Soundtrack.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!------- JavaScript ------->
+
+    <script src="javascript/kuis.js"></script>
+    <script>
+      function clickButton() {
+        let btnSound = new Audio("audio/506053__mellau__button-click-2.wav");
+        btnSound.play();
+
+        setTimeout(function () {
+          window.location.href = "end.html";
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

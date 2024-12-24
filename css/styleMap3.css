@@ -1,0 +1,287 @@
+/* ------ CSS Reset ------ */
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* prettier-ignore */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* prettier-ignore */
+body {
+	line-height: 1;
+  box-sizing: border-box;
+}
+
+/* prettier-ignore */
+ol, ul {
+	list-style: none;
+}
+
+/* prettier-ignore */
+blockquote, q {
+	quotes: none;
+}
+
+/* prettier-ignore */
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------ Main Screen ------ */
+
+body {
+  font-family: "VT323";
+  background-image: url(../assets/peta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hormatkanan {
+  position: absolute;
+  left: 494px;
+  top: 70px;
+  width: 100px;
+  opacity: 0;
+  animation: scale-in-center 1s ease 5s forwards,
+    scale-out-center 1s ease 8s forwards;
+}
+
+.hormatkanan2 {
+  position: absolute;
+  left: 494px;
+  top: 70px;
+  width: 100px;
+  opacity: 0;
+  animation: scale-in-center 1s ease 9s forwards,
+    scale-out-center 1s ease 12s forwards;
+}
+
+.hormatkanan3 {
+  position: absolute;
+  left: 494px;
+  top: 70px;
+  width: 100px;
+  opacity: 0;
+  animation: scale-in-center 1s ease 13s forwards,
+    scale-out-center 1s ease 16s forwards;
+}
+
+.hormatkanan4 {
+  position: absolute;
+  left: 489px;
+  top: 70px;
+  width: 100px;
+  opacity: 0;
+  animation: scale-in-center 1s ease 17s forwards;
+}
+
+.speech-bubble1 {
+  position: absolute;
+  right: 500px;
+  top: 100px;
+  width: 175px;
+  background: #e2f0d9;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: scale-in-center 1s ease 5s forwards,
+    scale-out-center 1s ease 8s forwards;
+}
+
+.speech-bubble2 {
+  position: absolute;
+  right: 500px;
+  top: 100px;
+  width: 175px;
+  background: #e2f0d9;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: scale-in-center 1s ease 9s forwards,
+    scale-out-center 1s ease 12s forwards;
+}
+
+.speech-bubble3 {
+  position: absolute;
+  right: 500px;
+  top: 100px;
+  width: 175px;
+  background: #e2f0d9;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: scale-in-center 1s ease 13s forwards,
+    scale-out-center 1s ease 16s forwards;
+}
+
+.speech-bubble {
+  position: absolute;
+  right: 500px;
+  top: 100px;
+  background: #e2f0d9;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: scale-in-center 1s ease 17s forwards;
+}
+
+.speech-bubble h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #385723;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.speech-bubble p,
+.speech-bubble1 p,
+.speech-bubble2 p,
+.speech-bubble3 p {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 10px 0 20px 0;
+  color: #548235;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.speech-bubble .mulai {
+  background-color: #385723;
+  color: #e2f0d9;
+  font-family: "VT323";
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 5px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  transition: 200ms;
+}
+
+.speech-bubble .mulai:hover {
+  background-color: #e2f0d9;
+  color: #385723;
+}
+
+.boy-girl {
+  position: absolute;
+  left: 430px;
+  bottom: 270px;
+}
+
+.animate-boy-girl {
+  animation: move 3.5s ease-in-out forwards;
+}
+
+.boy-girl .boy {
+  position: absolute;
+  left: 145px;
+  bottom: 0;
+  width: 75px;
+  z-index: 2;
+}
+
+.boy-girl .girl {
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  width: 250px;
+}
+
+/* ------ Animation ------ */
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out-center {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 430px;
+    bottom: 270px;
+  }
+  20% {
+    left: 600px;
+    bottom: 270px;
+  }
+  50% {
+    left: 750px;
+    bottom: 350px;
+  }
+  75% {
+    left: 630px;
+    bottom: 400px;
+  }
+  100% {
+    left: 670px;
+    bottom: 460px;
+  }
+}

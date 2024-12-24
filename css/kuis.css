@@ -1,0 +1,229 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "VT323";
+  background-image: url(../assets/freepik__enhance__71194.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.soal {
+  position: absolute;
+  top: 150px;
+  border-radius: 10px;
+  padding: 15px 125px;
+  text-align: center;
+  background-color: #ffd966;
+  color: #eb5b00;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-shadow: 0 0 1px #843c0c;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  position: absolute;
+  top: 300px;
+  margin-top: 50px;
+  opacity: 0;
+}
+
+.animate-btn {
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
+}
+
+.animate-soal {
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.btn .btn-a-b,
+.btn .btn-c-d {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn .btn-a-b {
+  margin-bottom: 70px;
+}
+
+.btn .jawabanA,
+.btn .jawabanB,
+.btn .jawabanC,
+.btn .jawabanD {
+  border-radius: 10px;
+  padding: 10px 60px;
+  text-align: center;
+  background-color: #ffd966;
+  color: #eb5b00;
+  font-family: "VT323";
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0 0 1px #843c0c;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  transition: 100ms;
+}
+
+.jawabanA:hover,
+.jawabanB:hover,
+.jawabanC:hover,
+.jawabanD:hover {
+  background-color: #eb5b00;
+  color: #ffd966;
+  transition: 100ms;
+}
+
+.jawaban.selected {
+  background-color: #f44242;
+  color: #f7df98;
+}
+
+.jawabanBenar.selectedBenar {
+  background-color: #41e141;
+  color: #f7df98;
+}
+
+.benar {
+  position: absolute;
+  top: 250px;
+  left: 420px;
+  width: 400px;
+  z-index: -999;
+  opacity: 0;
+}
+
+.salah {
+  position: absolute;
+  top: 250px;
+  left: 420px;
+  width: 400px;
+  z-index: -999;
+  opacity: 0;
+}
+
+.animate-benar {
+  animation: appear 1s ease 2 alternate both;
+}
+
+.animate-salah {
+  animation: appear 1s ease 2 alternate both;
+}
+
+.monyet {
+  position: absolute;
+  left: -50px;
+  top: -30px;
+  width: 400px;
+  animation: translate-monyet 0.8s linear infinite alternate both;
+}
+
+.owl {
+  position: absolute;
+  left: 80px;
+  top: 210px;
+  width: 200px;
+}
+
+.next {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  height: 50px;
+  background: #385723;
+  color: #e2f0d9;
+  font-family: "VT323";
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 99;
+}
+
+.animate-next {
+  animation: scale-in-center 0.3s ease 1s both;
+}
+
+@keyframes translate-monyet {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    z-index: -999;
+  }
+  100% {
+    opacity: 1;
+    z-index: 999;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontface.css" />
+    <link rel="stylesheet" href="css/puzzle.css" />
+    <title>Magical Algebra Adventure</title>
+  </head>
+  <body>
+    <!-------- Main Content -------->
+
+    <div class="petunjuk">
+      <img src="assets/6.png" alt="Perempuan" class="girlBiasa" />
+      <div class="speech-rectangle">
+        Susunlah Puzzle ke dalam kotak membentuk perahu
+      </div>
+    </div>
+
+    <div class="drop-target"></div>
+    <img
+      src="assets/trapesium.png"
+      alt="Trapesium"
+      class="trapesium"
+      id="trapesium"
+    />
+    <img
+      src="assets/Picture6.png"
+      alt="Segitiga Siku"
+      class="segitigaSiku"
+      id="segitigaSiku"
+    />
+    <img
+      src="assets/segitigakecil.png"
+      alt="segitiga Kecil"
+      class="segitigaKecil"
+      id="segitigaKecil"
+    />
+
+    <button onclick="clickButton()" class="next">Lanjut</button>
+
+    <audio id="bgMusic">
+      <source
+        src="audio/Let's cook 1 - Cooking Mama Soundtrack.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <script src="javascript/puzzle.js"></script>
+    <script src="javascript/drag.js"></script>
+    <script>
+      function clickButton() {
+        let btnSound = new Audio("audio/506053__mellau__button-click-2.wav");
+        btnSound.play();
+
+        setTimeout(function () {
+          window.location.href = "map2.html";
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

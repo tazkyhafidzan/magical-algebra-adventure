@@ -1,0 +1,184 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "VT323";
+  background-image: url(../assets/freepik__enhance__35895.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.petunjuk .girlBiasa {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 130px;
+  opacity: 0;
+}
+
+.petunjuk .speech-rectangle {
+  position: absolute;
+  right: 115px;
+  top: 60px;
+  background: #e2f0d9;
+  color: #385723;
+  padding: 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+  width: 300px;
+  z-index: -1;
+  outline: #385723 2px solid;
+  opacity: 0;
+}
+
+.petunjuk .animate-speech,
+.petunjuk .animate-girlBiasa {
+  animation: scale-in-center 1s ease both;
+}
+
+.drop-target {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+}
+
+.drop1 {
+  width: 380px;
+  height: 350px;
+  left: 10px;
+  top: 60px;
+}
+
+.drop2 {
+  width: 450px;
+  height: 180px;
+  left: 0;
+  bottom: 0;
+}
+
+.drop3 {
+  width: 430px;
+  height: 280px;
+  top: 40px;
+  right: 33%;
+}
+
+.drop4 {
+  width: 450px;
+  height: 200px;
+  right: 0;
+  bottom: 0;
+}
+
+.drop5 {
+  width: 500px;
+  height: 200px;
+  right: 28%;
+  top: 45%;
+}
+
+#jerapah {
+  position: absolute;
+  right: 300px;
+  top: 200px;
+  width: 130px;
+  cursor: grab;
+}
+
+#gorilla {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  width: 100px;
+  cursor: grab;
+}
+
+#zebra {
+  position: absolute;
+  left: 300px;
+  top: 350px;
+  width: 130px;
+  cursor: grab;
+}
+
+#buaya {
+  position: absolute;
+  left: 50px;
+  top: 280px;
+  width: 150px;
+  cursor: grab;
+}
+
+#flamingo {
+  position: absolute;
+  right: 400px;
+  bottom: 90px;
+  width: 100px;
+  cursor: grab;
+}
+
+.next {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  height: 50px;
+  background: #385723;
+  color: #e2f0d9;
+  font-family: "VT323";
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: scale-in-center 0.3s ease 10s both;
+  z-index: 99;
+}
+
+/* .animate-next {
+  animation: scale-in-center 0.3s ease both;
+} */
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontface.css" />
+    <link rel="stylesheet" href="css/style.css" as="style" />
+    <title>Magical Algebra Adventure</title>
+  </head>
+  <body>
+    <!-------- Main Content -------->
+
+    <div class="content">
+      <h1>Magical Algebra Adventure</h1>
+
+      <button onclick="clickButton()" href="#" class="play-button">
+        <div class="play-icon"></div>
+      </button>
+
+      <p>Mulai</p>
+    </div>
+
+    <!------- Animation Assets ------->
+    <img
+      src="assets/hormatKanan.png"
+      alt="Laki-Laki Hormat"
+      class="boy-main animation-asset"
+    />
+    <img
+      src="assets/3.png"
+      alt="Perempuan Ransel"
+      class="girl-main animation-asset"
+    />
+    <img src="assets/beo.png" alt="Burung Beo" class="parrot animation-asset" />
+    <img
+      src="assets/monyet2.png"
+      alt="Monyet"
+      class="monyet2 animation-asset"
+    />
+    <img src="assets/daun-1.png" alt="Daun" class="daun1 animation-asset" />
+    <img src="assets/daun-3.png" alt="Daun" class="daun3 animation-asset" />
+    <img src="assets/daun5.png" alt="Daun" class="daun5 animation-asset" />
+
+    <!------- Audio ------->
+
+    <audio id="btnSound">
+      <source src="audio/506053__mellau__button-click-2.wav" type="audio/mp3" />
+    </audio>
+
+    <audio id="bgMusic" autoplay loop>
+      <source
+        src="audio/Title Theme - Cooking Mama Soundtrack.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!------- JavaScript ------->
+
+    <script>
+      function clickButton() {
+        var audio = document.getElementById("btnSound");
+        audio.play();
+
+        setTimeout(function () {
+          window.location.href = "map.html";
+        }, 1000);
+      }
+
+      document.addEventListener("keydown", function (event) {
+        if (event.code === "Space") {
+          let bgMusic = new Audio(
+            "audio/Title Theme - Cooking Mama Soundtrack.mp3"
+          );
+          bgMusic.play();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "VT323";
+  src: url(../font/VT323-Regular.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Luckiest Guy";
+  src: url(../font/luckiestguy.woff2) format(woff2);
+}

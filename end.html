@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontface.css" />
+    <link rel="stylesheet" href="css/end.css" />
+    <title>Magical Algebra Adventure</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>Horee!! Selamat kamu berhasil menyelesaikan game ini&#9786;</p>
+      <button onclick="clickButton()" class="keluar">Keluar</button>
+    </div>
+
+    <img src="assets/7.png" alt="Boy" class="boy" />
+    <img src="assets/3.png" alt="Girl" class="girl" />
+
+    <audio id="bgMusic" autoplay loop>
+      <source
+        src="audio/Result - Cooking Mama Soundtrack.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="javascript/end.js"></script>
+    <script>
+      function clickButton() {
+        let btnSound = new Audio("audio/506053__mellau__button-click-2.wav");
+        btnSound.play();
+
+        setTimeout(function () {
+          window.location.href = "index.html";
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
