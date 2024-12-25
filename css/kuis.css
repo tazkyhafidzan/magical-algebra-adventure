@@ -36,17 +36,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .soal {
-  position: absolute;
-  top: 150px;
   border-radius: 10px;
-  padding: 15px 125px;
+  padding: 1rem 9rem;
   text-align: center;
   background-color: #ffd966;
   color: #eb5b00;
-  font-size: 50px;
+  font-size: 3rem;
   letter-spacing: 5px;
   text-shadow: 0 0 1px #843c0c;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
@@ -58,10 +58,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 550px;
-  position: absolute;
-  top: 300px;
-  margin-top: 50px;
+  width: 580px;
+  margin-top: 5rem;
   opacity: 0;
 }
 
@@ -81,7 +79,7 @@ body {
 }
 
 .btn .btn-a-b {
-  margin-bottom: 70px;
+  margin-bottom: 3rem;
 }
 
 .btn .jawabanA,
@@ -89,12 +87,12 @@ body {
 .btn .jawabanC,
 .btn .jawabanD {
   border-radius: 10px;
-  padding: 10px 60px;
+  padding: 0.8rem 3rem;
   text-align: center;
   background-color: #ffd966;
   color: #eb5b00;
   font-family: "VT323";
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   text-shadow: 0 0 1px #843c0c;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
@@ -122,18 +120,16 @@ body {
 
 .benar {
   position: absolute;
-  top: 250px;
-  left: 420px;
-  width: 400px;
+  max-width: 25vw;
+  height: auto;
   z-index: -999;
   opacity: 0;
 }
 
 .salah {
   position: absolute;
-  top: 250px;
-  left: 420px;
-  width: 400px;
+  max-width: 25vw;
+  height: auto;
   z-index: -999;
   opacity: 0;
 }
@@ -148,32 +144,32 @@ body {
 
 .monyet {
   position: absolute;
-  left: -50px;
-  top: -30px;
-  width: 400px;
+  left: 9%;
+  top: 0;
+  max-width: 20vw;
+  height: auto;
   animation: translate-monyet 0.8s linear infinite alternate both;
 }
 
 .owl {
   position: absolute;
-  left: 80px;
-  top: 210px;
-  width: 200px;
+  left: 8%;
+  top: 40%;
+  max-width: 12vw;
+  height: auto;
 }
 
 .next {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 100px;
-  height: 50px;
+  right: 4%;
+  bottom: 4%;
   background: #385723;
   color: #e2f0d9;
   font-family: "VT323";
-  font-size: 20px;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  padding: 5px;
+  padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;

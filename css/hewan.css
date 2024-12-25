@@ -31,24 +31,28 @@ body {
   background-image: url(../assets/freepik__enhance__35895.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 .petunjuk .girlBiasa {
   position: absolute;
-  right: 10px;
-  top: 20px;
-  width: 130px;
+  right: 2%;
+  top: 2%;
+  max-width: 9vw;
+  height: auto;
   opacity: 0;
 }
 
 .petunjuk .speech-rectangle {
   position: absolute;
-  right: 115px;
-  top: 60px;
+  right: 8%;
+  top: 9%;
   background: #e2f0d9;
   color: #385723;
-  padding: 20px;
+  padding: 1.5rem;
   border-radius: 15px;
   text-transform: uppercase;
   text-align: center;
@@ -65,100 +69,62 @@ body {
   animation: scale-in-center 1s ease both;
 }
 
-.drop-target {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 0;
-}
-
-.drop1 {
-  width: 380px;
-  height: 350px;
-  left: 10px;
-  top: 60px;
-}
-
-.drop2 {
-  width: 450px;
-  height: 180px;
-  left: 0;
-  bottom: 0;
-}
-
-.drop3 {
-  width: 430px;
-  height: 280px;
-  top: 40px;
-  right: 33%;
-}
-
-.drop4 {
-  width: 450px;
-  height: 200px;
-  right: 0;
-  bottom: 0;
-}
-
-.drop5 {
-  width: 500px;
-  height: 200px;
-  right: 28%;
-  top: 45%;
-}
-
 #jerapah {
   position: absolute;
-  right: 300px;
-  top: 200px;
-  width: 130px;
+  right: 25%;
+  top: 15%;
+  max-width: 12vw;
+  height: auto;
   cursor: grab;
 }
 
 #gorilla {
   position: absolute;
-  left: 20px;
-  bottom: 10px;
-  width: 100px;
+  left: 2%;
+  bottom: 2%;
+  max-width: 10vw;
+  height: auto;
   cursor: grab;
 }
 
 #zebra {
   position: absolute;
-  left: 300px;
-  top: 350px;
-  width: 130px;
+  left: 30%;
+  top: 25%;
+  max-width: 13vw;
+  height: auto;
   cursor: grab;
 }
 
 #buaya {
   position: absolute;
-  left: 50px;
-  top: 280px;
-  width: 150px;
+  left: 2%;
+  top: 34%;
+  max-width: 14vw;
+  height: auto;
   cursor: grab;
 }
 
 #flamingo {
   position: absolute;
-  right: 400px;
-  bottom: 90px;
-  width: 100px;
+  right: 10%;
+  bottom: 2%;
+  max-width: 7vw;
+  height: auto;
   cursor: grab;
 }
 
 .next {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 100px;
-  height: 50px;
+  right: 4%;
+  bottom: 4%;
   background: #385723;
   color: #e2f0d9;
   font-family: "VT323";
-  font-size: 20px;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  padding: 5px;
+  padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -168,9 +134,9 @@ body {
   z-index: 99;
 }
 
-/* .animate-next {
+.animate-next {
   animation: scale-in-center 0.3s ease both;
-} */
+}
 
 @keyframes scale-in-center {
   0% {

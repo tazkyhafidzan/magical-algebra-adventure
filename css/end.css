@@ -31,20 +31,21 @@ body {
   background-image: url(../assets/freepik__expand__83408.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
-  position: absolute;
-  top: 150px;
-  width: 643px;
+  width: 600px;
   background-color: #e2f0d9;
   border-radius: 20px;
-  padding: 40px 20px;
+  padding: 1.5rem 2rem;
   outline: #385723 1px solid;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -56,7 +57,7 @@ body {
 
 .container p {
   color: #385723;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -64,14 +65,14 @@ body {
 }
 
 .container .keluar {
-  margin-top: 50px;
+  margin-top: 3rem;
   background: #385723;
   color: #e2f0d9;
   font-family: "VT323";
-  font-size: 20px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  padding: 13px 25px;
+  padding: 0.8rem 1.6rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -87,33 +88,35 @@ body {
 
 .boy {
   position: absolute;
-  top: 100px;
-  left: 180px;
-  width: 200px;
+  left: 18%;
+  top: 19%;
+  max-width: 14vw;
+  height: auto;
   opacity: 0;
 }
 
 .girl {
   position: absolute;
-  top: 100px;
-  right: 155px;
-  width: 200px;
+  right: 16%;
+  top: 19%;
+  max-width: 14vw;
+  height: auto;
   opacity: 0;
 }
 
 .animate-container {
   animation: scale-up-center 1s ease forwards,
-    scale-up 0.7s ease 0.9s infinite alternate both;
+    scale-up 0.7s ease 0.5s infinite alternate both;
 }
 
 .animate-boy {
   animation: scale-up-center 1s ease forwards,
-    translate-boy-girl 0.5s ease 1.2s infinite alternate both;
+    translate-boy-girl 0.5s ease 1s infinite alternate both;
 }
 
 .animate-girl {
   animation: scale-up-center 1s ease forwards,
-    translate-boy-girl 0.5s ease 1s infinite alternate both;
+    translate-boy-girl 0.5s ease 0.8s infinite alternate both;
 }
 
 @keyframes translate-boy-girl {
