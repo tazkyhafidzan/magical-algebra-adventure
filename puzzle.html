@@ -37,7 +37,7 @@
       id="segitigaKecil"
     />
 
-    <button onclick="clickButton()" class="next">Lanjut</button>
+    <button onclick="clickButtonPuzzle()" class="next">Lanjut</button>
 
     <audio id="bgMusic">
       <source
@@ -57,7 +57,7 @@
     <script src="javascript/puzzle.js"></script>
     <script src="javascript/drag.js"></script>
     <script>
-      function clickButton() {
+      function clickButtonPuzzle() {
         let btnSound = new Audio("audio/506053__mellau__button-click-2.wav");
         let clapSound = document.getElementById("clap");
         btnSound.play();

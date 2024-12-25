@@ -25,7 +25,7 @@
     <img src="assets/buaya.png" alt="Buaya" id="buaya" />
     <img src="assets/flamingo.png" alt="Flamingo" id="flamingo" />
 
-    <button onclick="clickButton()" class="next">Lanjut</button>
+    <button onclick="clickButtonHewan()" class="next">Lanjut</button>
 
     <!-------- Audio -------->
 
@@ -47,7 +47,7 @@
     <script src="javascript/hewan.js"></script>
     <script src="javascript/dragHewan.js"></script>
     <script>
-      function clickButton() {
+      function clickButtonHewan() {
         let btnSound = new Audio("audio/506053__mellau__button-click-2.wav");
         let clapSound = document.getElementById("clap");
         btnSound.play();
