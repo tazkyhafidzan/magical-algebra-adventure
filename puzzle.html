@@ -46,12 +46,22 @@
       />
     </audio>
 
+    <audio id="clap" autoplay loop>
+      <source
+        src="audio/Children Yay Sound Effect (HD) (mp3cut.net).mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
     <script src="javascript/puzzle.js"></script>
     <script src="javascript/drag.js"></script>
     <script>
       function clickButton() {
         let btnSound = new Audio("audio/506053__mellau__button-click-2.wav");
+        let clapSound = document.getElementById("clap");
         btnSound.play();
+        clapSound.play();
 
         setTimeout(function () {
           window.location.href = "map2.html";
