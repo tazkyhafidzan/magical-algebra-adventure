@@ -87,6 +87,15 @@ body {
   cursor: grab;
 }
 
+.shadow {
+  position: absolute;
+  bottom: 5%;
+  max-width: 23vw;
+  height: auto;
+  cursor: grab;
+  z-index: -9;
+}
+
 .next {
   position: absolute;
   right: 4%;
