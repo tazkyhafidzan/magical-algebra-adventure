@@ -184,11 +184,12 @@ body {
   position: absolute;
   left: 45%;
   bottom: 40%;
-}
-
-.animate-boy-girl {
   animation: move 4s ease-in-out forwards;
 }
+
+/* .animate-boy-girl {
+  animation: move 4s ease-in-out forwards;
+} */
 
 .boy-girl .boy {
   position: absolute;
