@@ -143,7 +143,7 @@ body {
   bottom: 0;
   left: 18%;
   bottom: 0;
-  animation: move 2s ease-in-out 1s forwards;
+  animation: move 2s ease-in-out forwards;
 }
 
 /* .animate-boy-girl {
