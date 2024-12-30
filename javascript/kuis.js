@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("keydown", function (event) {
-  if (event.code === "Space") {
-    let bgMusic = document.getElementById("bgMusic");
-    bgMusic.play();
+// document.addEventListener("keydown", function (event) {
+//   if (event.code === "Space") {
+//     let bgMusic = document.getElementById("bgMusic");
+//     bgMusic.play();
 
-    var animateSoal = document.querySelector(".soal");
-    var animateBtn = document.querySelector(".btn");
-    animateSoal.classList.add("animate-soal");
-    animateBtn.classList.add("animate-btn");
-  }
-});
+//     var animateSoal = document.querySelector(".soal");
+//     var animateBtn = document.querySelector(".btn");
+//     animateSoal.classList.add("animate-soal");
+//     animateBtn.classList.add("animate-btn");
+//   }
+// });

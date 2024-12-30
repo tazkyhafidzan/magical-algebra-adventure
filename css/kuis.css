@@ -51,6 +51,7 @@ body {
   text-shadow: 0 0 1px #843c0c;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
   opacity: 0;
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .btn {
@@ -61,15 +62,16 @@ body {
   width: 580px;
   margin-top: 5rem;
   opacity: 0;
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
 }
 
-.animate-btn {
+/* .animate-btn {
   animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
 }
 
 .animate-soal {
   animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
+} */
 
 .btn .btn-a-b,
 .btn .btn-c-d {
