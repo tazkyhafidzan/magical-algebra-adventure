@@ -40,7 +40,48 @@ body {
   height: 100vh;
 }
 
-.soal {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  background-color: #ffd966;
+  position: absolute;
+  border-radius: 30px;
+}
+
+#drawing-container {
+  border: 2px solid black;
+  width: 550px;
+  height: 330px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: crosshair;
+}
+
+.controls label {
+  margin-right: 10px;
+}
+
+.controls input {
+  margin-right: 20px;
+}
+
+#clear-canvas {
+  padding: 0.3rem 0.7rem;
+  background-color: #385723;
+  border-radius: 5px;
+  color: #e2f0d9;
+}
+
+/* .soal {
   border-radius: 10px;
   padding: 1rem 9rem;
   text-align: center;
@@ -63,7 +104,7 @@ body {
   margin-top: 5rem;
   opacity: 0;
   animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
-}
+} */
 
 /* .animate-btn {
   animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
@@ -73,7 +114,7 @@ body {
   animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 } */
 
-.btn .btn-a-b,
+/* .btn .btn-a-b,
 .btn .btn-c-d {
   display: flex;
   justify-content: space-between;
@@ -142,7 +183,7 @@ body {
 
 .animate-salah {
   animation: appear 1s ease 2 alternate both;
-}
+} */
 
 .monyet {
   position: absolute;
@@ -178,11 +219,12 @@ body {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
   opacity: 0;
   z-index: 99;
+  animation: scale-in-center 0.3s ease 20s both;
 }
 
-.animate-next {
+/* .animate-next {
   animation: scale-in-center 0.3s ease 1s both;
-}
+} */
 
 @keyframes translate-monyet {
   0% {
