@@ -21,16 +21,20 @@
       <img src="assets/6.png" alt="Girl Ransel" class="girl" />
     </div>
 
+    <audio id="bgMusic" autoplay loop>
+      <source src="audio/Menu - Cooking Mama Soundtrack.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
     <!------- JavaScript ------->
 
     <script>
       document.addEventListener("keydown", function (event) {
         if (event.code === "Space") {
-          let bgMusic = new Audio("audio/Menu - Cooking Mama Soundtrack.mp3");
-          bgMusic.play();
-
-          var boyGirl = document.querySelector(".boy-girl");
-          boyGirl.classList.add("animate-boy-girl");
+          // let bgMusic = new Audio("audio/Menu - Cooking Mama Soundtrack.mp3");
+          // bgMusic.play();
+          // var boyGirl = document.querySelector(".boy-girl");
+          // boyGirl.classList.add("animate-boy-girl");
         }
       });
 

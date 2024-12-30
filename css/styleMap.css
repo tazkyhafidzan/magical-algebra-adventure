@@ -141,13 +141,16 @@ body {
   position: absolute;
   left: 18%;
   bottom: 0;
-}
-
-.animate-boy-girl {
   left: 18%;
   bottom: 0;
   animation: move 2s ease-in-out 1s forwards;
 }
+
+/* .animate-boy-girl {
+  left: 18%;
+  bottom: 0;
+  animation: move 2s ease-in-out 1s forwards;
+} */
 
 .boy-girl .boy {
   position: absolute;

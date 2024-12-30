@@ -26,6 +26,7 @@ body {
   max-width: 9vw;
   height: auto;
   opacity: 0;
+  animation: scale-in-center 1s ease both;
 }
 
 .petunjuk .speech-rectangle {
@@ -44,12 +45,13 @@ body {
   z-index: -1;
   outline: #385723 2px solid;
   opacity: 0;
-}
-
-.petunjuk .animate-speech,
-.petunjuk .animate-girlBiasa {
   animation: scale-in-center 1s ease both;
 }
+
+/* .petunjuk .animate-speech,
+.petunjuk .animate-girlBiasa {
+  animation: scale-in-center 1s ease both;
+} */
 
 .drop-target {
   position: absolute;
